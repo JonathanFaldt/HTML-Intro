@@ -4,130 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fåglar</title>
+    <title>Start</title>
 </head>
 
 <body>
-    <h1>Fåglar</h1>
-    <p>Här kommer en onumrerad lista på olika småfåglar</p>
-    <ul>
-        <li>Talgoxe</li>
-        <li>Domherre</li>
-        <li>Pilfink</li>
-    </ul>
-
-    <p>En numrerad lista på fler fåglar</p>
-    <ol>
-        <li>Blåmes</li>
-        <li>Grönfink</li>
-        <li>Svartmes</li>
-    </ol>
-
-    <hr>
-
-    <ul>
-        <li>
-            <h3>Koltrast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nemo.</p>
-        </li>
-        <li>
-            <h3>Stare</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, maiores!</p>
-        </li>
-    </ul>
-
-    <hr>
-    <!-- En lista kan ha flera olika nivåer -->
-    <!-- Se först om ni kan skapa en sådan lista -->
-
-    <ul>
-        <li>
-            Sparvar
-            <ul>
-                <li>Gråsparv
-                    <ul>
-                        <li>På landet</li>
-                        <li>I Staden</li>
-                        <li>Utanför mitt café</li>
-                    </ul>
-                </li>
-                <li>Gulsparv</li>
-            </ul>
-        </li>
-        <li>
-            Finkar
-            <ul>
-                <li>Grönfink</li>
-                <li>Svartfink</li>
-                <li>Blåfink</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <!-- Lägga till olika typer av medieinnehåll, ex ljud, bild, video  -->
-    <h3>Om koltrast</h3>
-    <p>
-        Så låter Turdus Merula
-    </p>
-    <!-- Ett ljudklipp från en koltrast -->
-    <!-- Ett ljud kan spelas med elementet audio -->
-    <!-- Ett exempel på en relativ sökväg -->
-    <!-- Obs för att få spelkontroller till audio-elementet krävs att man anger controls -->
-
-
-    <!-- Ett exempel på en absolut sökväg -->
-
-
-
-
-
-    <!-- Ett bra sätt att organisera olika gallerier (ljud, video, bild, grafik) -->
-
-    <!-- Ett galleri -->
-    <!-- Ett exempel på ett semantiskt omslutande element som passar här är section -->
-
-    <section>
-
-        <h4>Ljudfiler</h4>
-        <figure>
-            <audio src="audios/Turdus_merula_-_Common_Blackbird_XC541784.mp3" controls></audio>
-            <figcaption>
-                Benoît Van Hecke, CC BY-SA 4.0 <https: //creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
-            </figcaption>
-        </figure>
-
-        <figure>
-            <audio
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Turdus_merula_-_Common_Blackbird_XC442903.mp3"
-                controls></audio>
-            <figcaption><a
-                    href="https://commons.wikimedia.org/wiki/File:Turdus_merula_-_Common_Blackbird_XC442903.mp3">James
-                    Ray</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia
-                Commons</figcaption>
-        </figure>
-
-        <!-- En sidas innehåll kan delas in i olika element som har betydelse - semantiska element -->
-        <!-- Ex.. header, footer, nav (navigation), article, main, aside -->
-
-    </section>
-    <!-- Ett galleri med videoklipp -->
-    <section>
-        <h4>Videoklipp</h4>
-        <figure>
-            <video src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Turdus_merula_singing.webm" width="300"
-                controls></video>
-            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Turdus_merula_singing.webm">Larske</a>, <a
-                    href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
-            </figcaption>
-        </figure>
-
-        <!-- Uppgift lägg till ett till videoklipp -->
-        <!-- OBS via filen gitignore finns inte filen i versionshanteringen -->
-        <figure>
-            <video src="videos/Turdus_merula_-_Common_Blackbird_XC541784.mp3gi" width="300" controls></video>
-            <figcaption>NaIzletuSi ™, CC BY 3.0 <https: //creativecommons.org/licenses/by/3.0>, via Wikimedia Commons
-            </figcaption>
-        </figure>
-    </section>
-
+    <header>
+        Ett sidhuvud - Webbplatsens identitet, ex en bild.
+    </header>
+    
+    <nav>
+        <!-- <pre></pre> elementet pre används så att blanksteg kan skrivas efter varandra -->
+        <!-- elementet &nbsp används för att skapa mellanrum -->
+        <a href="index.html">Startsida</a>&nbsp;&nbsp;|&nbsp;
+        <a href="birds.html">Om fåglar</a>&nbsp;|&nbsp;
+        <a href="contact.html">Kontakta oss</a>
+    </nav>
+    
+    <h1>Välkommen till en webbplats om fåglar och html</h1>
+    
+    <footer>&copy; Flisa Hedenlös</footer>
 </body>
+
+</html>

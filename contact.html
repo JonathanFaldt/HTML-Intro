@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformulär</title>
+</head>
+
+<body>
+    <nav>
+        <!-- <pre></pre> elementet pre används så att blanksteg kan skrivas efter varandra -->
+        <!-- elementet &nbsp används för att skapa mellanrum -->
+        <a href="index.html">Startsida</a>&nbsp;&nbsp;|&nbsp;
+        <a href="birds.html">Om fåglar</a>&nbsp;|&nbsp;
+        <a href="contact.html">Kontakta oss</a>
+    </nav>
+    <h1>Kontakta gärna oss via formuläret</h1>
+    <form action="#" method="get">
+
+        <!-- Vissa fält kan man göra till obligatoriska  -->
+        <p>
+            <label for="first_name">Ditt förnamn</label> <br>
+            <input type="text" name="first_name" id="first_name">
+        </p> 
+        <p>
+            <label for="last_name">Ditt efternamn</label> <br>
+            <input type="text" name="last_name" id="last_name">
+
+        </p>
+        <p>
+            <label for="email">Ange e-post <br>
+                <input type="email" name="email" id="email" required>
+            </label>   
+        </p>
+
+        <p>
+            <!-- username -->
+            <!-- Ange att fältet är obligatoriskt med attributet required -->
+            <!-- Fältet ska ha minst 4 tecken -->
+            <input type="text" name="username" id="username" placeholder="Ditt användarnamn" required minlength="4" maxlength="20">
+        </p>
+
+        <p>
+            <label for="password">Ange lösenord <br>
+                <input type="password" name="password" id="password">
+            </label>
+        </p>
+
+        <p>
+            <label for="file">Ladda upp en bild som du tycker om <br>
+                <input type="file" name="file" id="file">
+            </label>
+        </p>
+
+        <p>
+            <label for="color">Välj din favoritfärg <br>
+                <input type="color">
+            </label>
+        </p>
+
+        <p>
+            <label for="checkbox">Har du läst användarvillkoren?<br>
+                <input type="checkbox" value="checkbox" required>
+            </label>
+        </p>
+
+        <!-- Ett formulär element som tillåter större textmängd inklusive radbrytning är textarea -->
+
+        <p>
+            <label for="letter">Berätta om dig själv - Personligt brev <br>
+                <textarea name="letter" id="letter" cols="30" rows="10"></textarea>
+            </label>
+        </p>
+
+        <p>
+            Vilka språk föredrar du? <br>
+
+            <select name="languages" id="languages" multiple size="3">
+                <option value="html">HTML</option>
+                <option value="swedish">Svenska</option>
+                <option value="english">Engelska</option>
+                <option value="secret">Rövarspråket</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Skicka">
+    </form>
+</body>
+
+</html>
